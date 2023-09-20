@@ -1,0 +1,55 @@
+{
+    "name": "webdevelovers/resource-models",
+    "description": "Generic models library for erp resources",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Simone Bernini",
+            "email": "simone@webdevelovers.org"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "cakephp/chronos": "^2.3",
+        "doctrine/collections": "^1.6",
+        "doctrine/orm": "^2.12",
+        "gedmo/doctrine-extensions": "^3.5.0",
+        "solido/php-coding-standards": "dev-master",
+        "symfony/security-core": "^5.1|^6.0",
+        "symfony/string": "^5.1|^6.0",
+        "symfony/uid": "^5.1|^6.0",
+        "symfony/validator": "^5.1|^6.0",
+        "webdevelovers/resource-utils": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebDevelovers\\ResourceModels\\": "./src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse src/ -c phpstan.neon --level=8 --no-progress -vvv --memory-limit=2048M",
+        "cscheck": "phpcs --standard=phpcs.xml src/",
+        "csfix": "phpcbf --standard=phpcs.xml src/"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@bitbucket.org:web-develovers/resource-utils.git"
+        }
+    ]
+}
