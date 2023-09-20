@@ -9,7 +9,7 @@ use Symfony\Component\Uid\Uuid;
 trait ResourceReferenceTrait
 {
     #[ORM\Column(type: 'uuid', nullable: false)]
-    protected Uuid $subjectId;
+    protected Uuid $subject;
 
     #[ORM\Column(type: Types::STRING, nullable: false)]
     protected string $subjectName;
@@ -17,9 +17,9 @@ trait ResourceReferenceTrait
     #[ORM\Column(type: Types::STRING, nullable: false)]
     protected string $resourceName;
 
-    public function getSubjectId(): Uuid
+    public function getSubject(): Uuid
     {
-        return $this->subjectId;
+        return $this->subject;
     }
 
     public function getSubjectName(): string
