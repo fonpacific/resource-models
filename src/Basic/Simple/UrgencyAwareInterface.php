@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\Resource\Model;
+namespace WebDevelovers\ResourceModels\Basic\Simple;
 
 interface UrgencyAwareInterface
 {

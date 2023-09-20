@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\ResourceModels\Blame;
+namespace WebDevelovers\ResourceModels\Basic\Blame;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;

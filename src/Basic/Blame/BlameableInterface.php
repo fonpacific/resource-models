@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\ResourceModels\Anemic\Blame;
+namespace WebDevelovers\ResourceModels\Basic\Blame;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 

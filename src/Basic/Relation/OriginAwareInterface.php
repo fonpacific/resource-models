@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\Resource\Model;
+namespace WebDevelovers\ResourceModels\Basic\Relation;
 
 /**
  * Represents the "ultimate" origin of a record.In an ERP system where an action on a record triggers side effects,

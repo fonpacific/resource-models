@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\Resource\Model;
+namespace WebDevelovers\ResourceModels\Basic\Relation;
 
 /**
  * Represents the "context" of a "sub record". In an ERP system where a record has many "sub records",

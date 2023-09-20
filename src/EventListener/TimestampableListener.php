@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\ResourceModels\Rich\EventListener;
+namespace WebDevelovers\ResourceModels\EventListener;
 
 use Doctrine\Persistence\Event\LifecycleEventArgs;
-use WebDevelovers\Resource\RichModel\TimestampableInterface;
+use WebDevelovers\ResourceModels\Rich\Behaviour\TimestampableInterface;
 
 class TimestampableListener
 {

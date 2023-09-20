@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\Resource\RichModel;
+namespace WebDevelovers\ResourceModels\Rich\Behaviour;
 
 use Cake\Chronos\Chronos;
 use DateTimeInterface;
