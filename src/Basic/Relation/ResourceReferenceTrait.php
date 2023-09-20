@@ -5,7 +5,6 @@ namespace WebDevelovers\ResourceModels\Basic\Relation;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Uid\Uuid;
-use WebDevelovers\ResourceUtils\Reference\ResourceReference;
 
 trait ResourceReferenceTrait
 {
@@ -17,13 +16,6 @@ trait ResourceReferenceTrait
 
     #[ORM\Column(type: Types::STRING, nullable: false)]
     protected string $resourceName;
-
-    public function setReference(ResourceReference $resourceReference): void
-    {
-        $this->subjectId = $resourceReference->subject;
-        $this->subjectName = $resourceReference->subjectName;
-        $this->resourceName = $resourceReference->resourceName;
-    }
 
     public function getSubjectId(): Uuid
     {
