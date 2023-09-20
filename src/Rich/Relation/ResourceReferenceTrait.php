@@ -1,6 +1,6 @@
 <?php
 
-namespace WebDevelovers\ResourceModels\Basic\Relation;
+namespace WebDevelovers\ResourceModels\Rich\Relation;
 
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
