@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\Resource\RichModel;
+namespace WebDevelovers\ResourceModels\Rich\Naming;
 
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
-use WebDevelovers\Resource\WDUtils;
+use WebDevelovers\ResourceUtils\StringUtils;
 
 /** @see RichNamingInterface */
 trait RichNamingTrait
@@ -18,7 +18,7 @@ trait RichNamingTrait
 
     public function updateSlug(): void
     {
-        $this->slug = WDUtils::slugify($this->name);
+        $this->slug = StringUtils::slugify($this->name);
     }
 
     #[ORM\Column(type: Types::STRING, nullable: false)]

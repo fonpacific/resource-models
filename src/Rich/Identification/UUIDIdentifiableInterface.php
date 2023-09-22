@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\Resource\RichModel;
+namespace WebDevelovers\ResourceModels\Rich\Identification;
 
 // phpcs:disable SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint
 interface UUIDIdentifiableInterface

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebDevelovers\Resource\Model;
+namespace WebDevelovers\ResourceModels\Basic\Behaviour;
 
 /**
  * Dedicated to handle positioning/re-ordering of a list
