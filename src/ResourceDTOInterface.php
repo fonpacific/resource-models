@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace WebDevelovers\ResourceModels;
 
-interface ResourceInterface
+interface ResourceDTOInterface
 {
-    public function getId(): void;
 }

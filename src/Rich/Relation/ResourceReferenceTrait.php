@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace WebDevelovers\ResourceModels\Rich\Relation;
 
 use Doctrine\DBAL\Types\Types;
@@ -32,4 +34,3 @@ trait ResourceReferenceTrait
         return $this->resourceName;
     }
 }
-
