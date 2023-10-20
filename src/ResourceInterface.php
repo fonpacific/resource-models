@@ -8,5 +8,5 @@ use Symfony\Component\Uid\Uuid;
 
 interface ResourceInterface
 {
-    public function getId(): Uuid|int|null;
+    public function getId(): Uuid;
 }
