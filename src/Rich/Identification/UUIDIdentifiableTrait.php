@@ -6,7 +6,6 @@ namespace WebDevelovers\ResourceModels\Rich\Identification;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Uid\Uuid;
-use Symfony\Component\Uid\UuidV4;
 use WebDevelovers\ResourceModels\ResourceInterface;
 
 // phpcs:disable SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint
@@ -23,14 +22,8 @@ trait UUIDIdentifiableTrait
     #[ORM\Column(type: 'uuid', nullable: false)]
     protected Uuid $id;
 
-    /**
-     * @see ResourceInterface kept not typed to mantain compatibility
-     *
-     * @return Uuid|UuidV4
-     *
-     * @psalm-suppress MissingReturnType
-     */
-    public function getId()
+    /** @return Uuid */
+    public function getId(): Uuid
     {
         return $this->id;
     }
