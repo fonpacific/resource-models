@@ -1,5 +1,5 @@
 {
-    "name": "webdevelovers/resource-models",
+    "name": "web-develovers/resource-models",
     "description": "Generic models library for erp resources",
     "type": "library",
     "license": "MIT",
@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "cakephp/chronos": "^2.3",
+        "cakephp/chronos": "^2.3|^3.0",
         "doctrine/collections": "^1.6|^2.0",
         "doctrine/orm": "^2.12",
         "gedmo/doctrine-extensions": "^3.5.0",
@@ -22,7 +22,7 @@
         "symfony/string": "^5.1|^6.0",
         "symfony/uid": "^5.1|^6.0",
         "symfony/validator": "^5.1|^6.0",
-        "webdevelovers/resource-utils": "dev-master"
+        "web-develovers/resource-utils": "dev-master"
     },
     "autoload": {
         "psr-4": {
