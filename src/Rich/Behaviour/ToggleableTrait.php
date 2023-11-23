@@ -18,6 +18,11 @@ trait ToggleableTrait
         return $this->enabled;
     }
 
+    public function isDisabled(): bool
+    {
+        return ! $this->isEnabled();
+    }
+
     public function setEnabled(bool $enabled): void
     {
         $this->enabled = $enabled;

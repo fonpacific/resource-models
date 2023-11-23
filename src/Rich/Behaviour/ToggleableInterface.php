@@ -8,6 +8,8 @@ interface ToggleableInterface
 {
     public function isEnabled(): bool;
 
+    public function isDisabled(): bool;
+
     public function setEnabled(bool $enabled): void;
 
     public function enable(): void;
