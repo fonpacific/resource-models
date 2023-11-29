@@ -18,10 +18,10 @@
         "doctrine/orm": "^2.12",
         "gedmo/doctrine-extensions": "^3.5.0",
         "solido/php-coding-standards": "dev-master",
-        "symfony/security-core": "^5.1|^6.0",
-        "symfony/string": "^5.1|^6.0",
-        "symfony/uid": "^5.1|^6.0",
-        "symfony/validator": "^5.1|^6.0",
+        "symfony/security-core": "^5.1|^6.0|^7.0",
+        "symfony/string": "^5.1|^6.0|^7.0",
+        "symfony/uid": "^5.1|^6.0|^7.0",
+        "symfony/validator": "^5.1|^6.0|^7.0",
         "web-develovers/resource-utils": "dev-master"
     },
     "autoload": {
