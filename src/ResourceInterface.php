@@ -9,4 +9,6 @@ use Symfony\Component\Uid\Uuid;
 interface ResourceInterface
 {
     public function getId(): Uuid;
+
+    public function __toString(): string;
 }
