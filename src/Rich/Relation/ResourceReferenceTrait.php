@@ -17,7 +17,7 @@ trait ResourceReferenceTrait
     protected string $subjectName;
 
     #[ORM\Column(type: Types::STRING, nullable: false)]
-    protected string $resourceName;
+    protected string $resourceAlias;
 
     public function getSubject(): Uuid
     {
@@ -29,8 +29,8 @@ trait ResourceReferenceTrait
         return $this->subjectName;
     }
 
-    public function getResourceName(): string
+    public function getResourceAlias(): string
     {
-        return $this->resourceName;
+        return $this->resourceAlias;
     }
 }
