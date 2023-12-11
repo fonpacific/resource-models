@@ -6,12 +6,11 @@ namespace WebDevelovers\ResourceModels\Basic\Behaviour;
 
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
-use Gedmo\Mapping\Annotation as Gedmo;
 
 /** @see SortablePositionInterface */
+//TODO: replace GEDMO
 trait SortablePositionTrait
 {
-    #[Gedmo\SortablePosition]
     #[ORM\Column(type: Types::INTEGER)]
     protected int|null $position = null;
 
